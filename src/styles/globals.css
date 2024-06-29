@@ -1,7 +1,12 @@
-:root {
-}
-
 body {
   line-height: 1.4;
   font-weight: 500;
+  background: #eee;
+}
+
+main,
+header {
+  max-width: 500px;
+  background: #fff;
+  margin: 0 auto;
 }

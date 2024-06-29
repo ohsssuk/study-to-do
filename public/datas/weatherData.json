@@ -1,0 +1,113 @@
+[
+  {
+    "date": "2024-06-24",
+    "day": "월요일",
+    "temperature": 25,
+    "weather": "맑음"
+  },
+  {
+    "date": "2024-06-25",
+    "day": "화요일",
+    "temperature": 26,
+    "weather": "구름 많음"
+  },
+  { "date": "2024-06-26", "day": "수요일", "temperature": 27, "weather": "비" },
+  {
+    "date": "2024-06-27",
+    "day": "목요일",
+    "temperature": 28,
+    "weather": "흐림"
+  },
+  {
+    "date": "2024-06-28",
+    "day": "금요일",
+    "temperature": 29,
+    "weather": "맑음"
+  },
+  {
+    "date": "2024-06-29",
+    "day": "토요일",
+    "temperature": 30,
+    "weather": "맑음"
+  },
+  {
+    "date": "2024-06-30",
+    "day": "일요일",
+    "temperature": 28,
+    "weather": "구름 많음"
+  },
+  { "date": "2024-07-01", "day": "월요일", "temperature": 27, "weather": "비" },
+  {
+    "date": "2024-07-02",
+    "day": "화요일",
+    "temperature": 29,
+    "weather": "맑음"
+  },
+  {
+    "date": "2024-07-03",
+    "day": "수요일",
+    "temperature": 28,
+    "weather": "구름 많음"
+  },
+  {
+    "date": "2024-07-04",
+    "day": "목요일",
+    "temperature": 30,
+    "weather": "흐림"
+  },
+  {
+    "date": "2024-07-05",
+    "day": "금요일",
+    "temperature": 31,
+    "weather": "맑음"
+  },
+  {
+    "date": "2024-07-06",
+    "day": "토요일",
+    "temperature": 32,
+    "weather": "맑음"
+  },
+  {
+    "date": "2024-07-07",
+    "day": "일요일",
+    "temperature": 33,
+    "weather": "구름 많음"
+  },
+  { "date": "2024-07-08", "day": "월요일", "temperature": 30, "weather": "비" },
+  {
+    "date": "2024-07-09",
+    "day": "화요일",
+    "temperature": 29,
+    "weather": "맑음"
+  },
+  {
+    "date": "2024-07-10",
+    "day": "수요일",
+    "temperature": 28,
+    "weather": "구름 많음"
+  },
+  {
+    "date": "2024-07-11",
+    "day": "목요일",
+    "temperature": 30,
+    "weather": "맑음"
+  },
+  {
+    "date": "2024-07-12",
+    "day": "금요일",
+    "temperature": 31,
+    "weather": "맑음"
+  },
+  {
+    "date": "2024-07-13",
+    "day": "토요일",
+    "temperature": 32,
+    "weather": "맑음"
+  },
+  {
+    "date": "2024-07-14",
+    "day": "일요일",
+    "temperature": 33,
+    "weather": "구름 많음"
+  }
+]
