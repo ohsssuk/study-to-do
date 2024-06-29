@@ -1,7 +1,7 @@
 import PageTitle from "../components/part/PageTitle";
 import PageSection from "../components/part/PageContent";
 import WeekWeather from "@/containers/WeekWeather";
-import Todo from "@/containers/Todo";
+import Todo from "@/containers/ToDo";
 
 import styles from "./styles.module.css";
 

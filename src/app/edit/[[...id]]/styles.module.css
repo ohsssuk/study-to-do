@@ -5,5 +5,9 @@
   padding: 0 20px;
 }
 .cta {
-  margin-top: 20px;
+  padding: 0 20px;
+  margin-top: 40px;
+}
+.input-wrap {
+  padding: 10px 20px;
 }

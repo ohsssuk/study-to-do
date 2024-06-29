@@ -4,6 +4,7 @@ import styles from "./styles.module.css";
 import useTodoStore from "@/stores/todo-store";
 import CommonBtn from "@/components/ui/CommonBtn";
 import { useRouter } from "next/navigation";
+import TodoItem from "./TodoItem";
 
 export default function ToDo() {
   const router = useRouter();
@@ -13,22 +14,18 @@ export default function ToDo() {
 
   const { todoItems, createTodo } = useTodoStore();
 
-  const handleClickAddTodo = () => {
+  const handleClickToEdit = () => {
     router.push("/edit");
   };
 
   return (
     <div id={styles.todo_list}>
       <div className={styles.cta}>
-        <CommonBtn onClick={handleClickAddTodo}>추가 버튼</CommonBtn>
+        <CommonBtn onClick={handleClickToEdit}>추가 버튼</CommonBtn>
       </div>
-      <ul>
+      <ul className={styles.list}>
         {todoItems.map((todo, index) => (
-          <li key={index}>
-            <h3>{todo.title}</h3>
-            <p>{todo.content}</p>
-            <p>Due Date: {String(todo.dueDate)}</p>
-          </li>
+          <TodoItem todo={todo} index={index} />
         ))}
       </ul>
     </div>
