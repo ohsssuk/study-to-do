@@ -20,6 +20,9 @@ npm run start
 ## 목적
 - next.js 기반 To-Do 일정관리 기능 개발
 
+## node version
+- v20.12.2
+
 ---
 
 # 프로젝트 구조 및 역할 설명
