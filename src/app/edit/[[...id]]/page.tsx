@@ -46,7 +46,7 @@ export default function EditTodo({ params }: EditTodoProps) {
         setDueDate(todo.dueDate ?? null);
       }
     }
-  }, []);
+  }, [getTodo, params]);
 
   const handleClickSave = () => {
     if (!title || !content) {

@@ -36,10 +36,6 @@ export default function WeekWeather() {
           (day) => day.date === formatDateToYYYYMMDD(today)
         );
 
-        if (todayIndex !== -1 && listRef.current) {
-          listRef.current.scrollLeft = todayIndex * (itemWidth + itemMargin);
-        }
-
         setWeather(thisWeekData);
         setTodayIndex(todayIndex);
         setIsLoading(false);
@@ -51,6 +47,12 @@ export default function WeekWeather() {
 
     fetchWeatherData();
   }, []);
+
+  useEffect(() => {
+    if (todayIndex !== -1 && listRef.current) {
+      listRef.current.scrollLeft = todayIndex * (itemWidth + itemMargin);
+    }
+  }, [todayIndex]);
 
   return (
     <div id={styles.week_wheather}>
