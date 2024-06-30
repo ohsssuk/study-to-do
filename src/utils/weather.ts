@@ -35,7 +35,7 @@ export function filterThisWeek(data: WeatherData[]): WeatherData[] {
 
   const mondayOfThisWeek = new Date(today);
   mondayOfThisWeek.setDate(
-    mondayOfThisWeek.getDate() - dayOfWeek + (dayOfWeek === 0 ? -6 : 1)
+    mondayOfThisWeek.getDate() - dayOfWeek + (dayOfWeek === 0 ? -7 : 0)
   );
 
   const sundayOfThisWeek = new Date(mondayOfThisWeek);

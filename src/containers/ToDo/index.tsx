@@ -3,29 +3,25 @@ import { useEffect, useState } from "react";
 import styles from "./styles.module.css";
 import useTodoStore from "@/stores/todo-store";
 import CommonBtn from "@/components/ui/CommonBtn";
-import { useRouter } from "next/navigation";
 import TodoItem from "./TodoItem";
 import Loading from "@/components/ui/Loading";
+import Link from "next/link";
 
 export default function ToDo() {
-  const router = useRouter();
-
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
-  const { todoItems, createTodo } = useTodoStore();
+  const { todoItems } = useTodoStore();
 
   useEffect(() => {
     setIsLoading(false);
   }, [todoItems]);
 
-  const handleClickToEdit = () => {
-    router.push("/edit");
-  };
-
   return (
     <>
       <div className={styles.cta}>
-        <CommonBtn onClick={handleClickToEdit}>추가 버튼</CommonBtn>
+        <Link href="/edit">
+          <CommonBtn>추가 버튼</CommonBtn>
+        </Link>
       </div>
       <div id={styles.todo_list}>
         {isLoading ? (
@@ -35,7 +31,7 @@ export default function ToDo() {
         ) : (
           <ul className={styles.list}>
             {todoItems.map((todo, index) => (
-              <TodoItem todo={todo} index={index} />
+              <TodoItem key={index} todo={todo} index={index} />
             ))}
           </ul>
         )}

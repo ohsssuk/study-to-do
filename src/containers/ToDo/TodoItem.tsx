@@ -4,6 +4,7 @@ import styles from "./styles.module.css";
 import CommonCheckbox from "@/components/ui/CommonCheckbox";
 import IconBtn from "@/components/ui/IconBtn";
 import { formatDateToYYYYMMDD } from "@/utils/weather";
+import Link from "next/link";
 
 interface TodoItemProps {
   todo: TodoItem;
@@ -20,15 +21,23 @@ export default function TodoItem({ todo, index }: TodoItemProps) {
     deleteTodo(index);
   };
 
+  const isDueDateWarning = todo.dueDate
+    ? new Date(todo.dueDate) <= new Date() && !todo.isDone
+    : false;
+
   return (
-    <li className={`${styles.todoItem} ${todo.isDone ? styles.done : ""}`}>
+    <li
+      className={`${todo.isDone ? styles.done : ""} ${
+        isDueDateWarning ? styles.warn : ""
+      }`}
+    >
       <CommonCheckbox isChecked={todo.isDone} onChange={handleCickCheck} />
-      <div className={styles.content}>
+      <Link href={`/edit/${index}`} className={styles.content}>
         <p>{todo.title}</p>
         {todo.dueDate && (
           <p>due date: {formatDateToYYYYMMDD(new Date(todo.dueDate))}</p>
         )}
-      </div>
+      </Link>
       <IconBtn onClick={handleDeleteClick} />
     </li>
   );

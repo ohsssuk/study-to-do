@@ -14,8 +14,10 @@
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@next/font": "^14.2.4",
     "axios": "^1.7.2",
+    "date-fns": "^3.6.0",
     "next": "14.2.4",
     "react": "^18",
+    "react-datepicker": "^7.2.0",
     "react-dom": "^18",
     "reset-css": "^5.0.2",
     "zustand": "^4.5.4"
